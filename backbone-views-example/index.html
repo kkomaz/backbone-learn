@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Backbone JS - Views | Templating Example</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main></main>
+
+  <!-- templates -->
+  
+  <script type="text/template" id="dog-template">
+    <h2>Name: <%= fullname %></h2>
+    <p>Age: <%= age %></p>
+    <p>Fleas: <%= fleas %></p>
+    <input class="fullname" type="text" value="<%= fullname %>"> <br>
+    <input class="age" type="number" value="<%= age %>"> <br>
+    <input class="fleas" type="text" value="<%= fleas %>"> <br>
+    <button class="update">Update</button> <br>
+    <button class="destroy">Destroy</button> <br>
+  </script>
+  
+  <!-- link jQuey -->
+  <script src="js/lib/jquery-min.js"></script>
+  <!-- link Underscore -->
+  <script src="js/lib/underscore-min.js"></script>
+  <!-- link Backbone -->
+  <script src="js/lib/backbone-min.js"></script>
+  <!-- link to our Models -->
+  <script src="js/models/dog.js"></script>
+  <!-- link to our Views -->
+  <script src="js/views/dog-view.js"></script>
+</body>
+</html>
